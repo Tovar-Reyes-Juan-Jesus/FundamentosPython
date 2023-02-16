@@ -125,25 +125,52 @@ print("t[1:4]", t[1:4])
 
 #seguir con SETS, Diccionario y cadenas.
 
-nuevoTema("SETS")
-a = {50,20,30,10,40}
-print("a = ",a)
+nuevoTema("SETS o Conjuntos")
+#el orden no es definido y solo permiten elementos en su tipo.
+#se declaran entre llaves
+a = {50,20,30,40,10,50}#son elementos unicos y no se repiten a la hora de ejecutar 
+print("Conjunto a = ",a,type(a))
 print(type(a))
 
-nuevoTema("DICCIONARIOS")
-d = {1:'val1',2:'val2'}
-print(type(d))
-print("d[1] = ",d[1])
-print("d[2] = ",d[2])
+nuevoTema("DICCIONARIO")
+#es un par ordenado el valor puede ser de cualquier valor ya sea la clave y el valor.
+d = {1:"valor1","Valor2":2j} #sintaxis: Clave_:_Valor
+print(d, type(d))
+print("d[Valor2] = ",d["Valor2"])
+
 
 nuevoTema("CADENAS")
+#son tipo secuenciales que pueden hacer cualquiera agregar un elemento en especifico.
 
-s = "Esto es una simple linea de caracteres."
-print(s)
+cadena1 = "Cadena con comillas dobles"
+cadena2 = 'Cadena con comillas simples'
 
-s2 = '''Una multilineas
- de caracteres. '''
+print(cadena1,type(cadena1))
+print(cadena2,type(cadena2))
 
-print(s2)
+cadenaMultilinea = ''' Esta es una cadena de varias lineas     con     tabulares y
+            saltos
+de
+linea''' #cadena formateada donde tal cual se pone es como se imprime solo si esta en un print
 
-#print("hi")
+print(cadenaMultilinea)
+
+print("Segmentacion de cadenas")
+
+print(cadena1[5:11])
+print(cadena1[:5])
+print(cadena1[7:])
+print(cadena1[-8:-1]) #con numeros negativos regresa el valor al ultimo ala izquierda.
+print(cadena1[0:18:1])#son saltos donde brinca o sancada para definir los caracteres donde son .
+print(cadena1[0:18:2])
+print(cadena1[0:18:3])
+
+cadena1= "hola"
+cadena4= (cadena1 + " ") * 5 #estamos multiplicando 5 veces, donde se repiten.
+print(cadena4)
+
+#para poder saltar o omitir cierto caracteres.
+#parametros con valor.
+#una cadena no la puedes cambiar, lo que puede cambiar es la variable.
+cadena5 = cadena4.upper()
+print(cadena5)
