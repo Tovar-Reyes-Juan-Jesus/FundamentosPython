@@ -125,5 +125,23 @@ print("t[1:4]", t[1:4])
 
 #seguir con SETS, Diccionario y cadenas.
 
+nuevoTema("SETS")
+a = {50,20,30,10,40}
+print("a = ",a)
+print(type(a))
 
+nuevoTema("DICCIONARIOS")
+d = {1:'val1',2:'val2'}
+print(type(d))
+print("d[1] = ",d[1])
+print("d[2] = ",d[2])
 
+nuevoTema("CADENAS")
+
+s = "Esto es una simple linea de caracteres."
+print(s)
+
+s2 = '''Una multilineas
+ de caracteres. '''
+
+print(s2)
